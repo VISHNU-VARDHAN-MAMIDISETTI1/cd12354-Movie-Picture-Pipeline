@@ -81,7 +81,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build \
-            --build-arg REACT_APP_MOVIE_API_URL=http://localhost:5000 \
+            --build-arg REACT_APP_MOVIE_API_URL=http://a4006090362b94438a906a2283da7b3f-95404093.us-east-1.elb.amazonaws.com \
             --tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG \
             starter/frontend
 
